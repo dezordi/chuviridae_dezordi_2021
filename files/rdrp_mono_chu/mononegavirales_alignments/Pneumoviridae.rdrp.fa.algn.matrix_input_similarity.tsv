@@ -1,0 +1,5 @@
+	Q6WB93.1/Pneumoviridae/RdRp/Human_metapneumovirus_CAN97-83	O91940.1/Pneumoviridae/RdRp/Bovine_respiratory_syncytial_virus	P28887.1/Pneumoviridae/RdRp/Human_respiratory_syncytial_virus_A2	Q50EW2.1/Pneumoviridae/RdRp/Pneumonia_virus_of_mice_15
+Q6WB93.1/Pneumoviridae/RdRp/Human_metapneumovirus_CAN97-83	1.0	0.4742	0.4817	0.505
+O91940.1/Pneumoviridae/RdRp/Bovine_respiratory_syncytial_virus	0.4742	1.0	0.8417	0.5276
+P28887.1/Pneumoviridae/RdRp/Human_respiratory_syncytial_virus_A2	0.4817	0.8417	1.0	0.5384
+Q50EW2.1/Pneumoviridae/RdRp/Pneumonia_virus_of_mice_15	0.505	0.5276	0.5384	1.0

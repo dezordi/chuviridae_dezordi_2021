@@ -1,0 +1,44 @@
+2021-03-25 17:46:04,866 - __main__ - INFO - 
+Initial parameters:
+Command Line Args:   --infile Bornaviridae.rdrp.fa.algn --remove_divergent --remove_divergent_minperc 0.54 --remove_insertions --insertion_min_size 1 --crop_ends --remove_short --remove_min_length 1000 --outfile_stem Bornaviridae.rdrp.fa.algn.edit
+Defaults:
+  --crop_ends_mingap_perc:0.05
+  --crop_ends_redefine_perc:0.1
+  --insertion_max_size:100
+  --insertion_min_flank:5
+  --consensus_type:  majority
+  --consensus_name:  consensus
+  --plot_dpi:        300
+  --plot_format:     png
+  --plot_width:      5
+  --plot_height:     3
+  --sequence_logo_type:bar
+  --sequence_logo_dpi:300
+  --sequence_logo_font:monospace
+  --sequence_logo_nt_per_row:50
+  --sequence_logo_filetype:png
+  --plot_coverage_dpi:300
+  --plot_coverage_height:3
+  --plot_coverage_width:5
+  --plot_coverage_colour:#007bf5
+  --plot_coverage_filetype:png
+  --make_simmatrix_dp:4
+  --make_simmatrix_minoverlap:1
+  --make_simmatrix_keepgaps:0
+
+2021-03-25 17:46:04,882 - __main__ - INFO - Amino acid alignment detected
+2021-03-25 17:46:04,882 - __main__ - INFO - Removing divergent sequences
+2021-03-25 17:46:05,487 - __main__ - INFO - Removing divergent sequences AVM87541.1/Bornaviridae/RdRp/protein_Sharpbelly_cultervirus, YP_009508490.1/Bornaviridae/RdRp/Southwest_carbovirus, YP_009508484.1/Bornaviridae/RdRp/Queensland_carbovirus
+2021-03-25 17:46:05,487 - __main__ - INFO - Removing gap only columns
+2021-03-25 17:46:05,489 - __main__ - INFO - Removing gap only sites 42, 58, 59, 1603, 1611, 1612, 1633, 1634, 1635, 1636, 1637, 1638, 1121, 1125, 1639, 106, 1640, 1668, 1676, 1677, 1678, 1679, 169, 170, 1706, 1707, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717, 210, 220, 229, 230, 1269, 1270, 1271, 1272, 262, 1804, 1805, 1806, 1807, 1808, 273, 1809, 1810, 1811, 1812, 1813, 1814, 280, 1815, 1816, 1817, 1818, 1819, 1820, 1821, 1822, 1823, 1837, 1339, 1340, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1379, 1380, 1381, 1382, 1383, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1459, 1460, 1461, 1462, 1463, 1464, 1465, 1466, 1467, 1479, 1480, 1481, 1500, 1501, 1506, 1507, 1508, 1509, 1510, 999, 1007
+2021-03-25 17:46:05,489 - __main__ - INFO - Removing insertions
+2021-03-25 17:46:05,490 - __main__ - INFO - Removing insertions
+
+2021-03-25 17:46:06,486 - __main__ - INFO - Removing sites 1602, 616, 1613, 622, 272, 1784
+2021-03-25 17:46:06,486 - __main__ - INFO - Removing gap only columns
+2021-03-25 17:46:06,487 - __main__ - INFO - Cropping ends
+2021-03-25 17:46:06,516 - __main__ - INFO - Removed 5 bases from end of YP_009505428.1/Bornaviridae/RdRp/Passeriform_2_orthobornavirus
+2021-03-25 17:46:06,538 - __main__ - INFO - Removing gap only columns
+2021-03-25 17:46:06,538 - __main__ - INFO - Removing short sequences
+2021-03-25 17:46:06,540 - __main__ - INFO - Removing too short sequences YP_009505428.1/Bornaviridae/RdRp/Passeriform_2_orthobornavirus
+2021-03-25 17:46:06,540 - __main__ - INFO - Removing gap only columns

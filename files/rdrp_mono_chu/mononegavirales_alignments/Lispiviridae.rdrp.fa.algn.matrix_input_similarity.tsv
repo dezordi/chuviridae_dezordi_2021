@@ -1,0 +1,7 @@
+	YP_009288955.1/Lispiviridae/RdRp/Gerrid_arlivirus	YP_009303699.1/Lispiviridae/RdRp/Lishi_arlivirus	YP_009336924.1/Lispiviridae/RdRp/Odonate_arlivirus	YP_009336889.1/Lispiviridae/RdRp/Hubei_arlivirus	YP_009304420.1/Lispiviridae/RdRp/Tacheng_arlivirus	YP_009342285.1/Lispiviridae/RdRp/Wuchang_arlivirus
+YP_009288955.1/Lispiviridae/RdRp/Gerrid_arlivirus	1.0	0.2956	0.2797	0.253	0.2825	0.2798
+YP_009303699.1/Lispiviridae/RdRp/Lishi_arlivirus	0.2956	1.0	0.2977	0.2533	0.2599	0.2818
+YP_009336924.1/Lispiviridae/RdRp/Odonate_arlivirus	0.2797	0.2977	1.0	0.2547	0.2651	0.2758
+YP_009336889.1/Lispiviridae/RdRp/Hubei_arlivirus	0.253	0.2533	0.2547	1.0	0.3078	0.281
+YP_009304420.1/Lispiviridae/RdRp/Tacheng_arlivirus	0.2825	0.2599	0.2651	0.3078	1.0	0.3217
+YP_009342285.1/Lispiviridae/RdRp/Wuchang_arlivirus	0.2798	0.2818	0.2758	0.281	0.3217	1.0

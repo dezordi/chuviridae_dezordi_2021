@@ -1,0 +1,221 @@
+DATASET_DOMAINS
+#Protein domain datasets are visualized as schematic representations of proteins, with a protein backbone and various shapes depicting the locations of individual domains
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA)_This separator must be used throughout this file_
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL, Genome
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#dataset scale: you can simply set the values where the scale will be drawn
+#DATASET_SCALE,100,200,1000
+#or you can specify value, label, color, width, style and label size factor for each scale line (dash separated, format: VALUE_LABEL_COLOR_WIDTH_DASHED_LABEL_SCALE_FACTOR))
+#DATASET_SCALE,100_amino acid 100_#0000ff_5_1_1,200_line at aa200_#ff0000_1_0_2,1000_3rd aa line_#00ff00_5_1_1
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label_
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y_ To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES)_ For each shape, you can define a scaling factor between 0 and 1_
+#Shape should be a number between 1 and 6, or any protein domain shape definition (RE, HH, HV___)_
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE,Dataset legend
+#LEGEND_POSITION_X,100
+#LEGEND_POSITION_Y,100
+#LEGEND_SHAPES,1,2,3
+#LEGEND_COLORS,#ff0000,#00ff00,#0000ff
+#LEGEND_LABELS,value1,value2,value3
+#LEGEND_SHAPE_SCALES,1,1,0_5
+
+#maximum width
+#WIDTH,1000
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed_ It could cause overlapping in the dataset display_
+#SHOW_INTERNAL,0
+
+#show dashed lines between leaf labels and the dataset
+#DASHED_LINES,1
+
+#left margin, used to increase_decrease the spacing to the next dataset_ Can be negative, causing datasets to overlap_
+#MARGIN,0
+
+#protein height factor; Default height of each domain will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase_decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+#HEIGHT_FACTOR,1
+
+#proteins are aligned to the node lines by default_ Using BAR_SHIFT, you can move them all up_down by a fixed amount
+#BAR_SHIFT,0
+
+#display or hide the text labels for each domain
+#SHOW_DOMAIN_LABELS,1
+
+#set the size factor for the text labels
+#LABEL_SIZE_FACTOR,1
+
+#with LABELS_ON_TOP set to 0, label text which does not fit into the shape will be hidden
+#LABELS_ON_TOP,0
+
+#color of the background rectangle representing the protein amino acid backbone
+#BACKBONE_COLOR,#aaaaaa
+
+#height of the background rectangle representing the protein amino acid backbone (in pixels)
+#BACKBONE_HEIGHT,10
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the domain shapes
+#BORDER_WIDTH,0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR,#0000ff
+
+
+#domains can be filled with plain color, or a gradient
+#GRADIENT_FILL,1
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+DATA
+#Each node can have one protein definition assigned, with total protein length defined in field 2, followed by an unlimited number of domain definitions
+#Each domain definition consists of 5 parts, separated with vertical lines:
+#SHAPE|START|END|COLOR|LABEL
+
+#there are 13 different possible shapes:
+#RE  rectangle
+#HH  horizontal hexagon
+#HV  vertical hexagon
+#EL  ellipse
+#DI  rhombus (diamond)
+#TR  right pointing triangle
+#TL  left pointing triangle
+#PL  left pointing pentagram
+#PR  right pointing pentagram
+#PU  up pointing pentagram
+#PD  down pointing pentagram
+#OC  octagon
+#GP  rectangle (gap; black filled rectangle with 1_3 normal height)
+
+#for example, a 1200 amino acid protein with 3 domains, displayed on node 9606:
+#red colored rectangle representing a SH2 domain at positions 100 _ 150
+#blue colored ellipse representing a SH3 domain at positions 400 _ 500
+#green colored octagon representing a PH domain at positions 700 _ 900
+#9606,1200,RE|100|150|#ff0000|SH2,EL|400|500|#0000ff|SH3,OC|700|900|#00ff00|PH
+YP_009177701_1_1_rdrp_Bole_Tick_Virus_3,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009177704_1_1_rdrp_Changping_Tick_Virus_2,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009177707_1_1_rdrp_Changping_Tick_Virus_3,600,RE|1|300|#FF6666|L,PL|301|600|#FFFF66|N
+AJG39051_1_1_rdrp_Lishi_Spider_Virus_1,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009300663_1_3_rdrp_Shayang_Fly_Virus_1,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+AJG39080_1_1_rdrp1_Shuangao_Fly_Virus_1,300,RE|1|300|#FF6666|L
+AJG39083_1_1_rdrp_Shuangao_Insect_Virus_5,300,RE|1|300|#FF6666|L
+YP_009177716_1_3_rdrp_Tacheng_Tick_Virus_4,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+YP_009177717_1_1_rdrp_Tacheng_Tick_Virus_5,600,RE|1|300|#FF6666|L,PL|301|600|#FFFF66|N
+AJG39060_1_1_rdrp_Wenzhou_Crab_Virus_2,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009302836_1_4_rdrp_Wenzhou_Crab_Virus_3,1200,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,HH|601|900|#FFB266|G,RE|901|1200|#FF6666|L
+YP_009666256_1_1_rdrp_Wuchang_Cockroach_Virus_3,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009666265_1_1_rdrp_Wuhan_Louse_Fly_Virus_6,600,RE|1|300|#FF6666|L,PL|350|600|#FFFF66|N
+YP_009666255_1_1_rdrp_Wuhan_Louse_Fly_Virus_7,600,RE|1|300|#FF6666|L,PL|350|600|#FFFF66|N
+YP_009177719_1_1_rdrp_Wuhan_Mosquito_Virus_8,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009177722_1_1_rdrp_Wuhan_Tick_Virus_2,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78724_1_1_rdrp_Hubei_chuvirus_like_virus_3,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78769_1_1_rdrp_Hubei_chuvirus_like_virus_4,300,RE|1|300|#FF6666|L
+APG78818_1_1_rdrp_Wenling_chuvirus_like_virus_1,300,RE|1|300|#FF6666|L
+APG78831_1_1_rdrp_Wenling_chuvirus_like_virus_2,300,RE|1|300|#FF6666|L
+APG78700_1_1_rdrp_Hubei_odonate_virus_11,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78770_1_1_rdrp_Sanxia_atyid_shrimp_virus_4,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78824_1_1_rdrp_Wenling_crustacean_virus_14,1200,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N,PL|901|1200|#FFFF66|N
+APG78828_1_1_rdrp_Wenling_crustacean_virus_13,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78840_1_1_rdrp_Wenling_crustacean_virus_15,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,EL|601|900|#FFFF66|HP
+APG78852_1_2_rdrp_Xinzhou_nematode_virus_5,600,EL|1|300|#FFFF66|HP,RE|301|600|#FF6666|L
+APG78798_1_4_rdrp_Hubei_myriapoda_virus_8,1200,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,EL|601|900|#FFFF66|HP,RE|901|1200|#FF6666|L
+APG78635_1_4_rdrp_Beihai_hermit_crab_virus_3,1200,HH|1|300|#FFB266|G,EL|301|600|#FFFF66|HP,EL|601|900|#FFFF66|HP,RE|901|1200|#FF6666|L
+APG78687_1_3_rdrp_Hubei_coleoptera_virus_3,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+ALP32028_1_1_rdrp_Imjin_River_virus_1,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AYV61060_1_1_rdrp_Wuhan_tick_virus_2_strain_100,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AYV61059_1_1_rdrp_Wuhan_tick_virus_2_strain_11,900,RE|1|300|#FF6666|L,PL|350|600|#FFFF66|N,HH|650|900|#FFB266|G
+AYV61054_1_1_rdrp_Wuhan_tick_virus_2__strain_9,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AYV61053_1_1_rdrp_Wuhan_tick_virus_2_strain_5,300,RE|1|300|#FF6666|L
+AYV61050_1_1_rdrp_Wuhan_tick_virus_2_strain_3,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AYV61047_1_1_rdrp_Wuhan_tick_virus_2_strain_1,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AJG39057_1_3_rdrp_Argas_mivirus,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+AJG39041_1_1_rdrp_Bole_mivirus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AJG39044_1_1_rdrp_Changping_mivirus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AJG39066_1_4_rdrp_Charybdis_mivirus,1200,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,HH|600|900|#FFB266|G,RE|901|1200|#FF6666|L
+AJG39067_1_1_rdrp_Cockroach_mivirus,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+AJG39047_1_1_rdrp_Dermacentor_mivirus,600,RE|1|300|#FF6666|L,PL|301|600|#FFFF66|N
+AJG39058_1_1_rdrp_Dermacentor_mivirus,600,RE|1|300|#FF6666|L,PL|301|600|#FFFF66|N
+AJG39073_1_1_rdrp_Hippoboscid_mivirus,650,RE|1|300|#FF6666|L,PL|350|650|#FFFF66|N
+AJG39082_1_1_rdrp_Lacewing_mivirus,300,RE|1|300|#FF6666|L
+ANC97697_1_1_rdrp_Lonestar_mivirus,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,PD|901|1200|#6666FF|ORF4
+AJG39070_1_1_rdrp_Louse_fly_mivirus,600,RE|1|300|#FF6666|L,PL|350|600|#FFFF66|N
+AJG39074_1_1_rdrp_Mosquito_mivirus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+APG78798_1_RdRp_Myriapod_mivirus,1200,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,EL|601|900|#FFFF66|HP,RE|901|1200|#FF6666|L
+AJG39054_1_3_rdrp_Shayang_mivirus,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+AIY53910_1_1_rdrp_Suffolk_mivirus,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,PD|901|1200|#6666FF|ORF4
+AJG39077_1_1_rdrp_Wuhan_mivirus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+YP_009177218_1_1_rdrp_Suffolk_virus,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,PD|901|1200|#6666FF|ORF4
+AUW34382_1_1_rdrp_Blacklegged_tick_chuvirus_2,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,PD|901|1200|#6666FF|ORF4
+AYP67535_1_1_rdrp_Cannae_Point_virus,1200,RE|1|300|#FF6666|L,PL|301|600|#FFFF66|N,HH|601|900|#FFB266|G,RE|901|1200|#FF6666|L
+AYP67566_1_1_rdrp_Genoa_virus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+QDW81054_1_1_rdrp_Brown_dog_tick_mivirus_1,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,OC|901|1200|#A0A0A0|Unk
+QDW81060_1_1_rdrp_Wuhan_mivirus__Trinidad_,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N,OC|901|1200|#A0A0A0|Unk
+QFR36197_1_1_rdrp_Wuhan_tick_virus_2_Thailand,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+QFR36194_1_2_rdrp_Changping_tick_virus_2_Thailand,900,PL|1|300|#FFFF66|N,RE|301|600|#FF6666|L,HH|601|900|#FFB266|G
+QMP82184_1_1_rdrp_Coleopteran_chu_related_virus_OKIAV127,600,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G
+QPL15366_1_1_rdrp_Megalopteran_chu_related_virus_OKIAV130,300,RE|1|300|#FF6666|L
+QMP82243_1_1_rdrp_Orthopteran_chu_related_virus_OKIAV116,300,RE|1|300|#FF6666|L
+QMP82200_1_1_rdrp_Blattodean_chu_related_virus_OKIAV148,300,RE|1|300|#FF6666|L
+QPB73986_1_3_rdrp_Megalopteran_chu_related_virus_OKIAV119,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+QPB73966_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV123,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+QPB73970_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV126,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+QPL15357_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV140,900,PL|1|300|#FFFF66|N,EL|301|600|#FFFF66|HP,RE|601|900|#FF6666|L
+QPL15314_1_1_rdrp_Neuropteran_chu_related_virus_OKIAV150,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+QMP82139_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV138,1200,RE|1|300|#FF6666|L,EL|350|600|#FFFF66|HP,PL|601|900|#FFFF66|N,HH|950|1200|#FFB266|G
+QMP82137_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV139,300,RE|1|300|#FF6666|L
+QPL15303_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV146,1500,HH|1|300|#FFB266|G,EL|301|600|#FFFF66|HP,PL|650|900|#FFFF66|N,EL|900|1200|#FFFF66|HP,RE|1250|1500|#FF6666|L
+QMP82337_1_1_rdrp_Coleopteran_chu_related_virus_OKIAV151,1200,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N,EL|901|1200|#FFFF66|HP
+QMP82271_1_1_rdrp_Phasmatodean_chu_related_virus_OKIAV118,300,RE|1|300|#FF6666|L
+QPL15384_1_2_rdrp_Hymenopteran_chu_related_virus_OKIAV122,600,PL|1|300|#FFFF66|N,RE|301|600|#FF6666|L
+QMP82316_1_1_rdrp_Grylloblattodean_chu_related_virus_OKIAV120,300,RE|1|300|#FF6666|L
+QPL15312_1_1_rdrp_Orthopteran_chu_related_virus_OKIAV152,600,HH|1|300|#FFB266|G,RE|350|600|#FF6666|L
+QPB73971_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV147,900,PL|1|300|#FFFF66|N,HH|301|600|#FFB266|G,RE|650|900|#FF6666|L
+QMP82284_1_1_rdrp_Phasmatodean_chu_related_virus_OKIAV1344,300,RE|1|300|#FF6666|L
+QPB73967_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV125,300,RE|1|300|#FF6666|L
+QMP82301_1_1_rdrp_Dermapteran_chu_related_virus_OKIAV142,1200,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|650|900|#FFFF66|N,EL|901|1200|#FFFF66|HP
+QPL15325_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV124,900,HH|1|300|#FFB266|G,PL|301|600|#FFFF66|N,RE|601|900|#FF6666|L
+QDB74145_1_1_rdrp_Bat_chuvirus_isolate_KSA431,300,RE|1|300|#FF6666|L
+QQP18758_1_1_rdrp_Soybean_thrips_chu_like_virus_1__Segment_L_,900,RE|1|300|#FF6666|L,EL|350|600|#FFFF66|HP,HH|601|900|#FFB266|G
+QGW51122_1_1_rdrp_Karukera_tick_virus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+QGW51125_1_1_rdrp_Wuhan_tick_virus_2,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+QJD26154_1_1_rdrp_Schistocephalus_solidus_jingchuvirus,300,RE|1|300|#FF6666|L
+QHX39760_1_3_rdrp_Herr_Frank_virus_1,900,PL|1|300|#FFFF66|N,HH|301|600|#FFB266|G,RE|601|900|#FF6666|L
+API61887_1_1_rdrp_Chuvirus_Mos8Chu0,300,RE|1|300|#FF6666|L
+AWA82254_1_5_hypothetical5_Mogami_virus,1500,HH|1|300|#FFB266|G,EL|301|600|#FFFF66|HP,PL|601|900|#FFFF66|N,EL|901|1200|#FFFF66|HP,RE|1201|1500|#FF6666|L
+QBP37027_1_1_polyprotein_Lampyris_noctiluca_chuvirus_like_virus_1,1250,RE|1|300|#FF6666|L,HH|350|650|#FFB266|G,PL|651|950|#FFFF66|N,EL|951|1250|#FFFF66|HP
+AWA82254_1_5_hypothetical5_Mogami_virus,1500,HH|1|300|#FFB266|G,EL|301|600|#FFFF66|HP,PL|601|900|#FFFF66|N,EL|900|1200|#FFFF66|HP,RE|1201|1500|#FF6666|L
+APG78716_1_rdrp_Hubei_chuvirus_like_virus_1,900,RE|1|300|#FF6666|L,HH|350|600|#FFB266|G,PL|601|900|#FFFF66|N
+AVM87272_1_rdrp_Guangdong_red_banded_snake_chuvirus_like_virus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AVM87278_1_rdrp_Wenling_fish_chuvirus_like_virus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N
+AVM87275_1_rdrp_Wenling_fish_chu_like_virus,900,RE|1|300|#FF6666|L,HH|301|600|#FFB266|G,PL|601|900|#FFFF66|N

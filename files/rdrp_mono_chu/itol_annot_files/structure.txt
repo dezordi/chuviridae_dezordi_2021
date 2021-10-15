@@ -1,0 +1,183 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box_strip and can have an optional label_ Color can be specified in hexadecimal, RGB or RGBA notation_ When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA)_This separator must be used throughout this file_
+
+#SEPARATOR TAB
+SEPARATOR COMMA
+#SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,Genome Structure
+
+#dataset color (can be changed later)
+COLOR,#99FF99
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves_
+#When all children of a node have the same color, it will be colored the same, ie_ the color will propagate inwards towards the root_
+COLOR_BRANCHES,0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label_
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y_ To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES)_ For each shape, you can define a scaling factor between 0 and 1_
+#Shape should be a number between 1 and 6, or any protein domain shape definition_
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0_5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0_5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase_decrease the spacing to the next dataset_ Can be negative, causing datasets to overlap_
+MARGIN,5
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed_ It could cause overlapping in the dataset display_
+#SHOW_INTERNAL 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#text label size factor
+#SIZE_FACTOR 1
+
+#text label rotation
+#LABEL_ROTATION 0
+
+#text label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+YP_009177701_1_1_rdrp_Bole_Tick_Virus_3,#FF9999,circular
+YP_009177704_1_1_rdrp_Changping_Tick_Virus_2,#FF9999,circular
+YP_009177707_1_1_rdrp_Changping_Tick_Virus_3,#FF9999,circular
+AJG39051_1_1_rdrp_Lishi_Spider_Virus_1,#FF9999,circular
+YP_009300663_1_3_rdrp_Shayang_Fly_Virus_1,#99CCFF,linear
+AJG39080_1_1_rdrp1_Shuangao_Fly_Virus_1,#99CCFF,linear
+AJG39083_1_1_rdrp_Shuangao_Insect_Virus_5,#99CCFF,linear
+YP_009177716_1_3_rdrp_Tacheng_Tick_Virus_4,#FF9999,circular
+YP_009177717_1_1_rdrp_Tacheng_Tick_Virus_5,#FF9999,circular
+AJG39060_1_1_rdrp_Wenzhou_Crab_Virus_2,#FF9999,circular
+YP_009302836_1_4_rdrp_Wenzhou_Crab_Virus_3,#99CCFF,linear
+YP_009666256_1_1_rdrp_Wuchang_Cockroach_Virus_3,#FF9999,circular
+YP_009666265_1_1_rdrp_Wuhan_Louse_Fly_Virus_6,#FF9999,circular
+YP_009666255_1_1_rdrp_Wuhan_Louse_Fly_Virus_7,#FF9999,circular
+YP_009177719_1_1_rdrp_Wuhan_Mosquito_Virus_8,#FF9999,circular
+YP_009177722_1_1_rdrp_Wuhan_Tick_Virus_2,#FF9999,circular
+APG78724_1_1_rdrp_Hubei_chuvirus_like_virus_3,#FFCDCD,p_circular
+APG78769_1_1_rdrp_Hubei_chuvirus_like_virus_4,#99CCFF,linear
+APG78818_1_1_rdrp_Wenling_chuvirus_like_virus_1,#99CCFF,linear
+APG78831_1_1_rdrp_Wenling_chuvirus_like_virus_2,#99CCFF,linear
+APG78700_1_1_rdrp_Hubei_odonate_virus_11,#99CCFF,linear
+APG78770_1_1_rdrp_Sanxia_atyid_shrimp_virus_4,#99CCFF,linear
+APG78824_1_1_rdrp_Wenling_crustacean_virus_14,#99CCFF,linear
+APG78828_1_1_rdrp_Wenling_crustacean_virus_13,#99CCFF,linear
+APG78840_1_1_rdrp_Wenling_crustacean_virus_15,#99CCFF,linear
+APG78852_1_2_rdrp_Xinzhou_nematode_virus_5,#99CCFF,linear
+APG78798_1_4_rdrp_Hubei_myriapoda_virus_8,#99CCFF,linear
+APG78635_1_4_rdrp_Beihai_hermit_crab_virus_3,#99CCFF,linear
+APG78687_1_3_rdrp_Hubei_coleoptera_virus_3,#99CCFF,linear
+ALP32028_1_1_rdrp_Imjin_River_virus_1,#FFCDCD,p_circular
+AYV61060_1_1_rdrp_Wuhan_tick_virus_2_strain_100,#FFCDCD,p_circular
+AYV61059_1_1_rdrp_Wuhan_tick_virus_2_strain_11,#FFCDCD,p_circular
+AYV61054_1_1_rdrp_Wuhan_tick_virus_2__strain_9,#FFCDCD,p_circular
+AYV61053_1_1_rdrp_Wuhan_tick_virus_2_strain_5,#FFCDCD,p_circular
+AYV61050_1_1_rdrp_Wuhan_tick_virus_2_strain_3,#FFCDCD,p_circular
+AYV61047_1_1_rdrp_Wuhan_tick_virus_2_strain_1,#FFCDCD,p_circular
+AJG39057_1_3_rdrp_Argas_mivirus,#FF9999,circular
+AJG39041_1_1_rdrp_Bole_mivirus,#FF9999,circular
+AJG39044_1_1_rdrp_Changping_mivirus,#FF9999,circular
+AJG39066_1_4_rdrp_Charybdis_mivirus,#99CCFF,linear
+AJG39067_1_1_rdrp_Cockroach_mivirus,#FF9999,circular
+AJG39047_1_1_rdrp_Dermacentor_mivirus,#FF9999,circular
+AJG39058_1_1_rdrp_Dermacentor_mivirus,#FF9999,circular
+AJG39073_1_1_rdrp_Hippoboscid_mivirus,#FF9999,circular
+AJG39082_1_1_rdrp_Lacewing_mivirus,#99CCFF,linear
+ANC97697_1_1_rdrp_Lonestar_mivirus,#FF9999,circular
+AJG39070_1_1_rdrp_Louse_fly_mivirus,#FF9999,circular
+AJG39074_1_1_rdrp_Mosquito_mivirus,#FF9999,circular
+APG78798_1_RdRp_Myriapod_mivirus,#99CCFF,linear
+AJG39054_1_3_rdrp_Shayang_mivirus,#99CCFF,linear
+AIY53910_1_1_rdrp_Suffolk_mivirus,#FF9999,circular
+AJG39077_1_1_rdrp_Wuhan_mivirus,#FF9999,circular
+YP_009177218_1_1_rdrp_Suffolk_virus,#FF9999,circular
+AUW34382_1_1_rdrp_Blacklegged_tick_chuvirus_2,#FF9999,circular
+AYP67535_1_1_rdrp_Cannae_Point_virus,#FFCDCD,p_circular
+AYP67566_1_1_rdrp_Genoa_virus,#FFCDCD,p_circular
+QDW81054_1_1_rdrp_Brown_dog_tick_mivirus_1,#FF9999,circular
+QDW81060_1_1_rdrp_Wuhan_mivirus__Trinidad_,#FF9999,circular
+QFR36197_1_1_rdrp_Wuhan_tick_virus_2_Thailand,#FF9999,circular
+QFR36194_1_2_rdrp_Changping_tick_virus_2_Thailand,#FF9999,circular
+QMP82184_1_1_rdrp_Coleopteran_chu_related_virus_OKIAV127,#99CCFF,linear
+QPL15366_1_1_rdrp_Megalopteran_chu_related_virus_OKIAV130,#99CCFF,linear
+QMP82243_1_1_rdrp_Orthopteran_chu_related_virus_OKIAV116,#99CCFF,linear
+QMP82200_1_1_rdrp_Blattodean_chu_related_virus_OKIAV148,#99CCFF,linear
+QPB73986_1_3_rdrp_Megalopteran_chu_related_virus_OKIAV119,#99CCFF,linear
+QPB73966_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV123,#99CCFF,linear
+QPB73970_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV126,#99CCFF,linear
+QPL15357_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV140,#99CCFF,linear
+QPL15314_1_1_rdrp_Neuropteran_chu_related_virus_OKIAV150,#99CCFF,linear
+QMP82139_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV138,#99CCFF,linear
+QMP82137_1_1_rdrp_Hemipteran_chu_related_virus_OKIAV139,#99CCFF,linear
+QPL15303_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV146,#99CCFF,linear
+QMP82337_1_1_rdrp_Coleopteran_chu_related_virus_OKIAV151,#99CCFF,linear
+QMP82271_1_1_rdrp_Phasmatodean_chu_related_virus_OKIAV118,#99CCFF,linear
+QPL15384_1_2_rdrp_Hymenopteran_chu_related_virus_OKIAV122,#99CCFF,linear
+QMP82316_1_1_rdrp_Grylloblattodean_chu_related_virus_OKIAV120,#99CCFF,linear
+QPL15312_1_1_rdrp_Orthopteran_chu_related_virus_OKIAV152,#99CCFF,linear
+QPB73971_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV147,#99CCFF,linear
+QMP82284_1_1_rdrp_Phasmatodean_chu_related_virus_OKIAV1344,#99CCFF,linear
+QPB73967_1_1_rdrp_Hymenopteran_chu_related_virus_OKIAV125,#99CCFF,linear
+QMP82301_1_1_rdrp_Dermapteran_chu_related_virus_OKIAV142,#99CCFF,linear
+QPL15325_1_3_rdrp_Hymenopteran_chu_related_virus_OKIAV124,#99CCFF,linear
+QDB74145_1_1_rdrp_Bat_chuvirus_isolate_KSA431,#99CCFF,linear
+QQP18758_1_1_rdrp_Soybean_thrips_chu_like_virus_1__Segment_L_,#FFCDCD,p_circular
+QGW51122_1_1_rdrp_Karukera_tick_virus,#FF9999,circular
+QGW51125_1_1_rdrp_Wuhan_tick_virus_2,#FF9999,circular
+QJD26154_1_1_rdrp_Schistocephalus_solidus_jingchuvirus,#FF9999,circular
+QHX39760_1_3_rdrp_Herr_Frank_virus_1,#99CCFF,linear
+API61887_1_1_rdrp_Chuvirus_Mos8Chu0,#99CCFF,linear
+QBP37027_1_1_polyprotein_Lampyris_noctiluca_chuvirus_like_virus_1,#99CCFF,linear
+AWA82254_1_5_hypothetical5_Mogami_virus,#99CCFF,linear
+APG78716_1_rdrp_Hubei_chuvirus_like_virus_1,#99CCFF,linear
+AVM87272_1_rdrp_Guangdong_red_banded_snake_chuvirus_like_virus,#99CCFF,linear
+AVM87278_1_rdrp_Wenling_fish_chuvirus_like_virus,#99CCFF,linear
+AVM87275_1_rdrp_Wenling_fish_chu_like_virus,#99CCFF,linear

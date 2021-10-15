@@ -1,0 +1,8 @@
+	AOR51372.1/Xinmoviridae/RdRp/Bolahun_anphevirus	YP_009302387.1/Xinmoviridae/RdRp/Xincheng_anphevirus	YP_009337182.1/Xinmoviridae/RdRp/Dipteran_anphevirus	AJG39135.1/Xinmoviridae/RdRp/Shuangao_anphevirus	YP_009666282.1/Xinmoviridae/RdRp/Drosophilid_anphevirus	YP_009337121.1/Xinmoviridae/RdRp/Odonate_anphevirus	YP_009336728.1/Xinmoviridae/RdRp/Orthopteran_anphevirus
+AOR51372.1/Xinmoviridae/RdRp/Bolahun_anphevirus	1.0	0.37	0.3061	0.2849	0.2534	0.2525	0.2326
+YP_009302387.1/Xinmoviridae/RdRp/Xincheng_anphevirus	0.37	1.0	0.2885	0.2884	0.2497	0.2507	0.2217
+YP_009337182.1/Xinmoviridae/RdRp/Dipteran_anphevirus	0.3061	0.2885	1.0	0.404	0.3039	0.2777	0.2549
+AJG39135.1/Xinmoviridae/RdRp/Shuangao_anphevirus	0.2849	0.2884	0.404	1.0	0.297	0.2833	0.246
+YP_009666282.1/Xinmoviridae/RdRp/Drosophilid_anphevirus	0.2534	0.2497	0.3039	0.297	1.0	0.2503	0.2355
+YP_009337121.1/Xinmoviridae/RdRp/Odonate_anphevirus	0.2525	0.2507	0.2777	0.2833	0.2503	1.0	0.2489
+YP_009336728.1/Xinmoviridae/RdRp/Orthopteran_anphevirus	0.2326	0.2217	0.2549	0.246	0.2355	0.2489	1.0

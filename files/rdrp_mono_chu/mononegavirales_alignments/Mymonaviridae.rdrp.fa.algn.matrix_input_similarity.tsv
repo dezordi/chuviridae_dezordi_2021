@@ -1,0 +1,8 @@
+	ALM62228.1/Mymonaviridae/RdRp/Dadou_sclerotimonavirus	YP_009666274.1/Mymonaviridae/RdRp/Drop_sclerotimonavirus	YP_009336595.1/Mymonaviridae/RdRp/Hubei_hubramonavirus	QOX06038.1/Mymonaviridae/RdRp/Lentinula_hubramonavirus	ALM62220.1/Mymonaviridae/RdRp/Glycine_sclerotimonavirus	ALM62227.1/Mymonaviridae/RdRp/Illinois_sclerotimonavirus	YP_009094317.1/Mymonaviridae/RdRp/Sclerotinia_sclerotimonavirus
+ALM62228.1/Mymonaviridae/RdRp/Dadou_sclerotimonavirus	1.0	0.545	0.2548	0.2436	0.2443	0.248	0.2507
+YP_009666274.1/Mymonaviridae/RdRp/Drop_sclerotimonavirus	0.545	1.0	0.2583	0.2447	0.2461	0.2409	0.2513
+YP_009336595.1/Mymonaviridae/RdRp/Hubei_hubramonavirus	0.2548	0.2583	1.0	0.2949	0.2405	0.2405	0.2334
+QOX06038.1/Mymonaviridae/RdRp/Lentinula_hubramonavirus	0.2436	0.2447	0.2949	1.0	0.2423	0.2497	0.2543
+ALM62220.1/Mymonaviridae/RdRp/Glycine_sclerotimonavirus	0.2443	0.2461	0.2405	0.2423	1.0	0.5546	0.5456
+ALM62227.1/Mymonaviridae/RdRp/Illinois_sclerotimonavirus	0.248	0.2409	0.2405	0.2497	0.5546	1.0	0.5596
+YP_009094317.1/Mymonaviridae/RdRp/Sclerotinia_sclerotimonavirus	0.2507	0.2513	0.2334	0.2543	0.5456	0.5596	1.0

@@ -1,0 +1,82 @@
+2021-03-25 20:07:06,300 - __main__ - INFO - 
+Initial parameters:
+Command Line Args:   --infile Mymonaviridae.rdrp.fa.algn --remove_divergent --remove_divergent_minperc 0.29 --remove_insertions --insertion_min_size 1 --crop_ends --remove_short --remove_min_length 1000 --outfile_stem Mymonaviridae.rdrp.fa.algn.edit
+Defaults:
+  --crop_ends_mingap_perc:0.05
+  --crop_ends_redefine_perc:0.1
+  --insertion_max_size:100
+  --insertion_min_flank:5
+  --consensus_type:  majority
+  --consensus_name:  consensus
+  --plot_dpi:        300
+  --plot_format:     png
+  --plot_width:      5
+  --plot_height:     3
+  --sequence_logo_type:bar
+  --sequence_logo_dpi:300
+  --sequence_logo_font:monospace
+  --sequence_logo_nt_per_row:50
+  --sequence_logo_filetype:png
+  --plot_coverage_dpi:300
+  --plot_coverage_height:3
+  --plot_coverage_width:5
+  --plot_coverage_colour:#007bf5
+  --plot_coverage_filetype:png
+  --make_simmatrix_dp:4
+  --make_simmatrix_minoverlap:1
+  --make_simmatrix_keepgaps:0
+
+2021-03-25 20:07:06,314 - __main__ - INFO - Amino acid alignment detected
+2021-03-25 20:07:06,314 - __main__ - INFO - Removing divergent sequences
+2021-03-25 20:07:06,899 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:07:06,900 - __main__ - INFO - Removing insertions
+2021-03-25 20:07:06,900 - __main__ - INFO - Removing insertions
+
+2021-03-25 20:07:08,783 - __main__ - INFO - Removing sites 513, 514, 2074, 2075, 2076, 29, 2077, 2078, 32, 30, 539, 1562, 31, 38, 39, 40, 41, 2043, 44, 2123, 2124, 81, 82, 83, 84, 85, 86, 87, 88, 2137, 2133, 2135, 2139, 2140, 2141, 2142, 2143, 2144, 2145, 2146, 611, 613, 2150, 2151, 612, 2147, 2148, 107, 2155, 2149, 2158, 102, 103, 104, 105, 106, 108, 109, 2161, 2167, 1656, 1657, 2166, 1659, 1660, 1658, 2168, 2169, 2170, 2171, 2172, 1667, 1668, 1669, 134, 2184, 2185, 2186, 2193, 152, 1697, 1698, 1702, 2222, 2223, 2224, 2225, 2226, 2227, 181, 694, 695, 696, 697, 698, 699, 1210, 1211, 1723, 1724, 2232, 1734, 2246, 2247, 2248, 2249, 2250, 211, 212, 1751, 1752, 1753, 1754, 1755, 1756, 2268, 1759, 227, 228, 229, 230, 231, 2280, 2281, 232, 233, 234, 235, 236, 237, 1264, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 1271, 1796, 1797, 1798, 263, 1799, 1804, 1805, 283, 284, 797, 798, 799, 297, 298, 1836, 1837, 1838, 303, 1839, 1840, 1841, 1842, 1843, 1844, 1845, 1857, 1865, 1866, 844, 349, 350, 1885, 1886, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1413, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 404, 1428, 1429, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 1467, 445, 446, 447, 448, 449, 1472, 1473, 1474, 1475, 1476, 1477, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1498, 1499, 1500, 1501, 1502, 1503, 1504, 1505, 1506, 2156, 605, 1507, 1508, 997, 998, 606, 1509, 1510, 1511, 1512, 607, 1513, 1514, 1522, 99, 608, 1523, 100, 609, 2042, 2136, 2157, 101, 610
+2021-03-25 20:07:08,783 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:07:08,783 - __main__ - INFO - Cropping ends
+2021-03-25 20:07:08,819 - __main__ - INFO - Removed 102 bases from end of ALM62229.1/Mymonaviridae/RdRp/Phyllosphere_sclerotimonavirus
+2021-03-25 20:07:08,848 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:07:08,848 - __main__ - INFO - Removing short sequences
+2021-03-25 20:07:08,851 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:09:35,411 - __main__ - INFO - 
+Initial parameters:
+Command Line Args:   --infile Mymonaviridae.rdrp.fa.algn --remove_divergent --remove_divergent_minperc 0.3 --remove_insertions --insertion_min_size 1 --crop_ends --remove_short --remove_min_length 1000 --outfile_stem Mymonaviridae.rdrp.fa.algn.edit
+Defaults:
+  --crop_ends_mingap_perc:0.05
+  --crop_ends_redefine_perc:0.1
+  --insertion_max_size:100
+  --insertion_min_flank:5
+  --consensus_type:  majority
+  --consensus_name:  consensus
+  --plot_dpi:        300
+  --plot_format:     png
+  --plot_width:      5
+  --plot_height:     3
+  --sequence_logo_type:bar
+  --sequence_logo_dpi:300
+  --sequence_logo_font:monospace
+  --sequence_logo_nt_per_row:50
+  --sequence_logo_filetype:png
+  --plot_coverage_dpi:300
+  --plot_coverage_height:3
+  --plot_coverage_width:5
+  --plot_coverage_colour:#007bf5
+  --plot_coverage_filetype:png
+  --make_simmatrix_dp:4
+  --make_simmatrix_minoverlap:1
+  --make_simmatrix_keepgaps:0
+
+2021-03-25 20:09:35,423 - __main__ - INFO - Amino acid alignment detected
+2021-03-25 20:09:35,423 - __main__ - INFO - Removing divergent sequences
+2021-03-25 20:09:35,915 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:09:35,916 - __main__ - INFO - Removing gap only sites 513, 514, 3, 4, 5, 539, 38, 39, 40, 349, 350, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 1659
+2021-03-25 20:09:35,916 - __main__ - INFO - Removing insertions
+2021-03-25 20:09:35,916 - __main__ - INFO - Removing insertions
+
+2021-03-25 20:09:37,683 - __main__ - INFO - Removing sites 103, 612, 1632, 2141, 2142, 2074, 2075, 2076, 29, 30, 31, 32, 2143, 1562, 538, 2144, 37, 2077, 2078, 41, 2145, 44, 2146, 2147, 2148, 2149, 2150, 2151, 2123, 2124, 81, 82, 83, 84, 2133, 86, 87, 88, 85, 2135, 2136, 2137, 2138, 2139, 2140, 604, 605, 606, 607, 100, 608, 102, 609, 104, 610, 106, 611, 2156, 109, 613, 2157, 2158, 2161, 105, 107, 108, 2166, 2167, 2168, 1656, 1657, 1658, 1660, 2172, 2171, 2169, 2170, 1667, 1668, 1669, 134, 2184, 2185, 2186, 2193, 152, 1697, 1698, 1702, 2222, 2223, 2224, 2225, 2226, 2227, 2228, 181, 694, 695, 696, 697, 698, 699, 1210, 1211, 1723, 1724, 2232, 184, 185, 1734, 2246, 2247, 2248, 2249, 2250, 211, 212, 213, 1751, 1752, 1753, 1754, 1755, 1756, 2268, 1759, 2280, 2281, 1264, 1271, 1796, 1797, 1798, 1799, 263, 264, 1804, 1805, 283, 284, 797, 798, 799, 297, 298, 299, 1836, 1837, 1838, 300, 301, 302, 303, 1839, 1840, 1841, 1842, 1843, 1844, 1845, 1857, 1865, 1866, 844, 348, 1885, 1886, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1413, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 182, 1428, 1429, 404, 183, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 1467, 445, 446, 447, 448, 449, 1472, 1473, 1474, 1475, 1476, 1477, 2155, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1498, 1499, 1500, 1501, 1502, 1503, 1504, 1505, 1506, 1507, 1508, 997, 998, 1509, 1510, 1511, 1512, 1513, 1514, 1522, 99, 1523, 2042, 2043, 101
+2021-03-25 20:09:37,684 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:09:37,684 - __main__ - INFO - Cropping ends
+2021-03-25 20:09:37,739 - __main__ - INFO - Removing gap only columns
+2021-03-25 20:09:37,739 - __main__ - INFO - Removing short sequences
+2021-03-25 20:09:37,741 - __main__ - INFO - Removing gap only columns

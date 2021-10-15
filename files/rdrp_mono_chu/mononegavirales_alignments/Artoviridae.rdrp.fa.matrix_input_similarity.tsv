@@ -1,0 +1,8 @@
+	YP_009333185.1/Artoviridae/RdRp/Barnacle_hexartovirus	YP_009333443.1/Artoviridae/RdRp/Beihai_peropuvirus	APG78806.1/Artoviridae/RdRp/Pillworm_peropuvirus	YP_009333449.1/Artoviridae/RdRp/Woodlouse_peropuvirus	APG78705.1/Artoviridae/RdRp/Hubei_peropuvirus	YP_009505433.1/Artoviridae/RdRp/Pteromalus_puparum_peropuvirus	APG78703.1/Artoviridae/RdRp/Odonate_peropuvirus
+YP_009333185.1/Artoviridae/RdRp/Barnacle_hexartovirus	1.0	0.2717	0.2753	0.2823	0.2787	0.2772	0.2258
+YP_009333443.1/Artoviridae/RdRp/Beihai_peropuvirus	0.2717	1.0	0.3506	0.3642	0.308	0.3105	0.273
+APG78806.1/Artoviridae/RdRp/Pillworm_peropuvirus	0.2753	0.3506	1.0	0.3838	0.3174	0.3221	0.2697
+YP_009333449.1/Artoviridae/RdRp/Woodlouse_peropuvirus	0.2823	0.3642	0.3838	1.0	0.3156	0.3123	0.2761
+APG78705.1/Artoviridae/RdRp/Hubei_peropuvirus	0.2787	0.308	0.3174	0.3156	1.0	0.4852	0.2821
+YP_009505433.1/Artoviridae/RdRp/Pteromalus_puparum_peropuvirus	0.2772	0.3105	0.3221	0.3123	0.4852	1.0	0.2755
+APG78703.1/Artoviridae/RdRp/Odonate_peropuvirus	0.2258	0.273	0.2697	0.2761	0.2821	0.2755	1.0

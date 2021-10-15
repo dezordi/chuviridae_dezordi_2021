@@ -1,0 +1,12 @@
+	QOU08494.1/Filoviridae/RdRp/Bombali_ebolavirus	AYI50387.1/Filoviridae/RdRp/Bundibugyo_ebolavirus	AWK96630.1/Filoviridae/RdRp/Tai_Forest_ebolavirus	Q6V1Q2.1/Filoviridae/RdRp/Zaire_Ebola_virus	Q91DD4.1/Filoviridae/RdRp/Reston_ebolavirus	Q5XX01.1/Filoviridae/RdRp/Sudan_ebolavirus	YP_004928143.1/Filoviridae/RdRp/Lloviu_cuevavirus	Q1PD54.1/Filoviridae/RdRp/Lake_Victoria_marburgvirus	AZL87829.1/Filoviridae/RdRp/Mengla_dianlovirus	AVM87241.1/Filoviridae/RdRp/Xilang_striavirus	AVM87247.1/Filoviridae/RdRp/Huangjiao_thamnovirus
+QOU08494.1/Filoviridae/RdRp/Bombali_ebolavirus	1.0	0.7513	0.757	0.758	0.7312	0.7444	0.5704	0.4754	0.4836	0.3882	0.2539
+AYI50387.1/Filoviridae/RdRp/Bundibugyo_ebolavirus	0.7513	1.0	0.8493	0.8026	0.7449	0.7391	0.5612	0.4665	0.4833	0.3862	0.2539
+AWK96630.1/Filoviridae/RdRp/Tai_Forest_ebolavirus	0.757	0.8493	1.0	0.8048	0.7456	0.7515	0.5623	0.4732	0.478	0.3881	0.2509
+Q6V1Q2.1/Filoviridae/RdRp/Zaire_Ebola_virus	0.758	0.8026	0.8048	1.0	0.7508	0.7447	0.5734	0.4746	0.4853	0.382	0.2574
+Q91DD4.1/Filoviridae/RdRp/Reston_ebolavirus	0.7312	0.7449	0.7456	0.7508	1.0	0.7515	0.5809	0.474	0.4767	0.3861	0.251
+Q5XX01.1/Filoviridae/RdRp/Sudan_ebolavirus	0.7444	0.7391	0.7515	0.7447	0.7515	1.0	0.5748	0.4687	0.4745	0.3764	0.2549
+YP_004928143.1/Filoviridae/RdRp/Lloviu_cuevavirus	0.5704	0.5612	0.5623	0.5734	0.5809	0.5748	1.0	0.4687	0.4757	0.3852	0.2513
+Q1PD54.1/Filoviridae/RdRp/Lake_Victoria_marburgvirus	0.4754	0.4665	0.4732	0.4746	0.474	0.4687	0.4687	1.0	0.5892	0.3643	0.2509
+AZL87829.1/Filoviridae/RdRp/Mengla_dianlovirus	0.4836	0.4833	0.478	0.4853	0.4767	0.4745	0.4757	0.5892	1.0	0.3628	0.2518
+AVM87241.1/Filoviridae/RdRp/Xilang_striavirus	0.3882	0.3862	0.3881	0.382	0.3861	0.3764	0.3852	0.3643	0.3628	1.0	0.2332
+AVM87247.1/Filoviridae/RdRp/Huangjiao_thamnovirus	0.2539	0.2539	0.2509	0.2574	0.251	0.2549	0.2513	0.2509	0.2518	0.2332	1.0
