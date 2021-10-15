@@ -8,7 +8,7 @@ library("ggspatial")
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
 world_chuv_all <- world %>% mutate(Genomes =
-                                     case_when(geounit == "China" ~ 48,
+                                     case_when(geounit == "China" ~ 49,
                                                geounit == "Brazil" ~ 12,
                                                geounit == "Austria" ~ 1,
                                                geounit == "United States of America" ~ 16,
