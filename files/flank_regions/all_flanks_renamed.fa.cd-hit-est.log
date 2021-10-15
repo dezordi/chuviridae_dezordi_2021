@@ -1,0 +1,35 @@
+================================================================
+Program: CD-HIT, V4.8.1 (+OpenMP), Mar 22 2020, 15:35:52
+Command: cd-hit-est -i all_flanks_renamed.fa -o
+         all_flanks_renamed.fa.cd -d 200 -c 0.8 -M 2000 -T 1
+
+Started: Fri Sep 10 14:37:57 2021
+================================================================
+                            Output                              
+----------------------------------------------------------------
+total seq: 1822
+longest and shortest : 10000 and 14
+Total letters: 15847383
+Sequences have been sorted
+
+Approximated minimal memory consumption:
+Sequence        : 16M
+Buffer          : 1 X 14M = 14M
+Table           : 1 X 16M = 16M
+Miscellaneous   : 4M
+Total           : 51M
+
+Table limit with the given memory limit:
+Max number of representatives: 1281945
+Max number of word counting entries: 243580063
+
+comparing sequences from          0  to       1822
+.
+     1822  finished       1267  clusters
+
+Approximated maximum memory consumption: 135M
+writing new database
+writing clustering information
+program completed !
+
+Total CPU time 2260.30
