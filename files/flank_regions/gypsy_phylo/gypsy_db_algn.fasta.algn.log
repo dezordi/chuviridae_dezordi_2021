@@ -1,0 +1,205 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Mar 16 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    jarvis (AVX2, FMA3, 7 GB RAM)
+Command: iqtree -s gypsy_db_algn.fasta.algn -nt 1 -m LG+G4 -b 500
+Seed:    248327 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Dec  9 15:31:14 2021
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file gypsy_db_algn.fasta.algn ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 97 sequences with 284 columns, 282 distinct patterns
+235 parsimony-informative, 34 singleton sites, 15 constant sites
+WARNING: Some sequence names are changed as follows:
+bemisia_tabaci_NW_017547204.1:782040-803803_ORF111 -> bemisia_tabaci_NW_017547204.1_782040-803803_ORF111
+
+                                                    Gap/Ambiguity  Composition  p-value
+   1  Athila4-1                                            14.08%    passed     66.60%
+   2  Bagy-2                                               14.44%    passed     70.12%
+   3  Cyclops-2                                            14.79%    passed     79.37%
+   4  Calypso                                              15.14%    passed     30.34%
+   5  Diaspora                                             14.44%    passed     26.39%
+   6  RetroSor1                                            20.42%    passed     83.39%
+   7  Cinful-1                                             20.42%    passed     84.18%
+   8  RIRE2                                                20.42%    passed     71.51%
+   9  Grande1-4                                            20.07%    passed     83.66%
+  10  Tat4-1                                               20.42%    passed     94.41%
+  11  Tft2                                                 20.42%    passed     70.47%
+  12  Ogre                                                 20.42%    passed     81.66%
+  13  B1147A04.5                                           25.35%    failed      1.69%
+  14  Gloin                                                21.83%    passed     72.93%
+  15  Ifg7                                                 21.13%    passed     71.52%
+  16  Gimli                                                20.77%    passed     95.41%
+  17  Reina                                                20.77%    passed     87.78%
+  18  Del                                                  21.83%    passed     85.42%
+  19  Peabody                                              20.77%    passed     38.92%
+  20  Retrosat-2                                           20.77%    passed     99.78%
+  21  Tma                                                  21.13%    passed     96.26%
+  22  Legolas                                              20.77%    passed     81.63%
+  23  Bagy-1                                               23.59%    passed     92.17%
+  24  Cereba                                               21.13%    passed     53.16%
+  25  CRM                                                  20.77%    passed     75.17%
+  26  Beetle1                                              20.77%    passed     84.37%
+  27  Tse3                                                 20.77%    passed     78.57%
+  28  Monkey                                               20.77%    passed     90.37%
+  29  Galadriel                                            20.77%    passed     56.34%
+  30  G-Rhodo                                              20.77%    passed     59.95%
+  31  Tntom1                                               21.13%    passed     41.12%
+  32  Sushi-ichi                                           20.77%    passed     71.92%
+  33  Amn-ni                                               17.96%    passed     94.29%
+  34  Amn-san                                              17.96%    passed     93.14%
+  35  Amn-ichi                                             18.31%    passed     80.52%
+  36  Cgret                                                20.77%    passed     77.92%
+  37  Pyret                                                21.83%    failed      3.88%
+  38  Skippy                                               20.42%    passed     95.63%
+  39  marY1                                                20.42%    passed     81.05%
+  40  Dane-1                                               20.77%    passed     86.86%
+  41  Maggy                                                20.77%    passed     71.70%
+  42  Real                                                 20.07%    passed     64.66%
+  43  Pyggy                                                20.07%    passed     17.16%
+  44  Grasshopper                                          20.07%    failed      0.06%
+  45  MGLR3                                                20.77%    passed     72.29%
+  46  Cft-1                                                20.42%    passed     86.31%
+  47  REM1                                                 20.42%    passed     98.78%
+  48  Ty3-1                                                21.48%    passed     98.94%
+  49  Gmr1                                                 21.13%    failed      4.82%
+  50  rGmr1                                                21.13%    passed     13.56%
+  51  Cer2                                                 21.48%    passed     76.61%
+  52  Cer3                                                 21.48%    passed     82.10%
+  53  HMS-Beagle                                           19.01%    passed     85.54%
+  54  Yoyo                                                 19.01%    passed     34.76%
+  55  Nomad                                                19.01%    passed     90.43%
+  56  Gypsyvir                                             18.66%    passed     95.60%
+  57  Gypsy                                                18.66%    passed     96.25%
+  58  Springer                                             18.66%    passed     87.34%
+  59  Burdock                                              18.66%    passed     61.65%
+  60  297                                                  19.01%    passed     72.51%
+  61  Tom                                                  19.01%    passed     98.96%
+  62  17.6                                                 19.01%    passed     84.86%
+  63  Tv1                                                  19.72%    failed      4.68%
+  64  Idefix                                               19.01%    passed     74.56%
+  65  Ted                                                  19.01%    passed     79.93%
+  66  Zam                                                  19.01%    passed     94.25%
+  67  Mdg3                                                 20.42%    passed     29.97%
+  68  412                                                  18.66%    passed     87.59%
+  69  Mdg1                                                 18.66%    passed     99.51%
+  70  Cer1                                                 20.77%    passed     84.77%
+  71  CsRN1                                                21.13%    failed      0.60%
+  72  Boudicca                                             21.13%    passed     48.72%
+  73  Kabuki                                               21.13%    passed     59.75%
+  74  Osvaldo                                              20.07%    passed     87.11%
+  75  Micropia                                             24.65%    passed     70.75%
+  76  Blastopia                                            20.42%    passed     25.96%
+  77  TF2                                                  20.77%    passed     49.96%
+  78  TF1                                                  20.77%    passed     49.06%
+  79  Woot                                                 20.77%    passed     99.91%
+  80  Mag                                                  20.77%    passed     80.65%
+  81  DRM                                                  19.72%    passed     62.33%
+  82  CFG1                                                 19.37%    passed     76.50%
+  83  Hydra2-1                                             19.37%    passed     93.25%
+  84  SPM                                                  19.37%    passed     36.99%
+  85  Cer4                                                 20.42%    passed     94.24%
+  86  Cer5                                                 20.42%    passed     61.73%
+  87  Cer6                                                 20.42%    passed     51.88%
+  88  Gulliver                                             20.42%    passed     74.98%
+  89  SURL                                                 20.42%    passed     99.21%
+  90  Tor1                                                 20.07%    passed     72.89%
+  91  Tor4a                                                19.37%    passed     61.91%
+  92  Cigr-1                                               20.42%    passed     60.99%
+  93  Skipper                                              21.48%    passed     86.66%
+  94  bemisia_tabaci_NW_017547204.1_782040-803803_ORF111   17.25%    passed     28.80%
+  95  Tor2                                                 15.49%    passed     31.08%
+  96  Ulysses                                              20.77%    passed     35.90%
+  97  Circe                                                31.34%    failed      0.19%
+****  TOTAL                                                20.12%  7 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> START BOOTSTRAP REPLICATE NUMBER 1
+
+Creating bootstrap alignment (seed: 248327)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.030 seconds
+
+NOTE: 11 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -30553.154
+2. Current log-likelihood: -30126.058
+3. Current log-likelihood: -30094.588
+4. Current log-likelihood: -30091.330
+5. Current log-likelihood: -30091.190
+Optimal log-likelihood: -30091.171
+Gamma shape alpha: 1.589
+Parameters optimization took 5 rounds (0.763 sec)
+Computing ML distances based on estimated model parameters... 2.477 sec
+Computing BIONJ tree...
+0.004 seconds
+Log-likelihood of BIONJ tree: -30017.228
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.379 second
+Computing log-likelihood of 98 initial trees ... 6.785 seconds
+Current best score: -30017.228
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -29907.248
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -29898.115
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -29883.027
+Iteration 10 / LogL: -29924.805 / Time: 0h:0m:22s
+Iteration 20 / LogL: -29976.460 / Time: 0h:0m:28s
+Finish initializing candidate tree set (20)
+Current best tree score: -29883.027 / CPU time: 25.273
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -29880.530
+Iteration 30 / LogL: -29903.974 / Time: 0h:0m:36s (0h:2m:3s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -29873.555
+Iteration 40 / LogL: -29885.630 / Time: 0h:0m:45s (0h:1m:50s left)
+Iteration 50 / LogL: -29880.345 / Time: 0h:0m:54s (0h:1m:33s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 51: -29872.405
+Iteration 60 / LogL: -29873.449 / Time: 0h:1m:3s (0h:1m:38s left)
+Iteration 70 / LogL: -29872.405 / Time: 0h:1m:12s (0h:1m:24s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 76: -29869.036
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 78: -29867.416
+Iteration 80 / LogL: -29874.104 / Time: 0h:1m:20s (0h:1m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 83: -29866.303
+Iteration 90 / LogL: -29869.044 / Time: 0h:1m:30s (0h:1m:34s left)
+Iteration 100 / LogL: -29891.319 / Time: 0h:1m:39s (0h:1m:23s left)
+Iteration 110 / LogL: -29872.891 / Time: 0h:1m:47s (0h:1m:12s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 119: -29864.886
+Iteration 120 / LogL: -29878.838 / Time: 0h:1m:55s (0h:1m:36s left)
+Iteration 130 / LogL: -29900.810 / Time: 0h:2m:4s (0h:1m:25s left)
+Iteration 140 / LogL: -29866.802 / Time: 0h:2m:12s (0h:1m:15s left)
+Iteration 150 / LogL: -29877.699 / Time: 0h:2m:21s (0h:1m:5s left)
+Iteration 160 / LogL: -29866.287 / Time: 0h:2m:30s (0h:0m:55s left)
+Iteration 170 / LogL: -29875.520 / Time: 0h:2m:38s (0h:0m:46s left)
+Iteration 180 / LogL: -29869.046 / Time: 0h:2m:47s (0h:0m:36s left)
+Iteration 190 / LogL: -29874.539 / Time: 0h:2m:55s (0h:0m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 192: -29863.745
+Iteration 200 / LogL: -29876.300 / Time: 0h:3m:4s (0h:1m:25s left)
+Iteration 210 / LogL: -29868.907 / Time: 0h:3m:13s (0h:1m:15s left)
+Iteration 220 / LogL: -29872.019 / Time: 0h:3m:22s (0h:1m:6s left)
+Iteration 230 / LogL: -29875.525 / Time: 0h:3m:30s (0h:0m:57s left)
+Iteration 240 / LogL: -29878.170 / Time: 0h:3m:39s (0h:0m:47s left)
+Iteration 250 / LogL: -29884.605 / Time: 0h:3m:49s (0h:0m:38s left)
+Iteration 260 / LogL: -29889.841 / Time: 0h:3m:58s (0h:0m:29s left)
+Iteration 270 / LogL: -29865.310 / Time: 0h:4m:6s (0h:0m:20s left)
+Iteration 280 / LogL: -29872.502 / Time: 0h:4m:14s (0h:0m:10s left)
+Iteration 290 / LogL: -29869.458 / Time: 0h:4m:22s (0h:0m:1s left)
