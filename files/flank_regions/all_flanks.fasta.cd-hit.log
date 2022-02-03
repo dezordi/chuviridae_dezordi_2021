@@ -1,0 +1,35 @@
+================================================================
+Program: CD-HIT, V4.8.1 (+OpenMP), Mar 22 2020, 15:35:52
+Command: cd-hit-est -i all_flanks.fasta -o all_flanks.fasta.cd
+         -c 0.8 -aL 0.2 -g 1 -n 8 -M 2000 -T 1 -d 200
+
+Started: Thu Feb  3 09:11:49 2022
+================================================================
+                            Output                              
+----------------------------------------------------------------
+total seq: 904
+longest and shortest : 252052 and 145
+Total letters: 17807797
+Sequences have been sorted
+
+Approximated minimal memory consumption:
+Sequence        : 17M
+Buffer          : 1 X 65M = 65M
+Table           : 1 X 1M = 1M
+Miscellaneous   : 0M
+Total           : 85M
+
+Table limit with the given memory limit:
+Max number of representatives: 40000
+Max number of word counting entries: 239371259
+
+comparing sequences from          0  to        904
+
+      904  finished        726  clusters
+
+Approximated maximum memory consumption: 163M
+writing new database
+writing clustering information
+program completed !
+
+Total CPU time 3955.84
