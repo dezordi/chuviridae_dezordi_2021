@@ -15,8 +15,8 @@ input_file = args.input
 var_threads = args.threads
 var_memory = args.memory
 
-Entrez.email = 'zimmer.filipe@gmail.com'
-Entrez.api_key = '29a8e7fd2add3e853ce3d3c18f140399a809'
+Entrez.email = input("Enter your ncbi-registered email: ")
+Entrez.api_key = input("Enter your ncbi api-key: ")
 
 def get_ids(response) -> list:
     j = json.loads(response.read())
