@@ -1,1 +1,0 @@
-remove_divergent	Tor2,bemisia_tabaci_NW_017547204.1:782040-803803_ORF111
